@@ -19,22 +19,13 @@ const projects = [
     github: 'https://github.com/ajayjawade06/PoojaTelecom',
   },
   {
-    title: 'Lokawani',
-    tag: 'Civic Tech',
-    tagClass: 'civic',
-    description:
-      'Full-stack MERN civic portal connecting citizens with local governance. Built for real-world deployment with a focus on accessibility and information delivery.',
-    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Vercel'],
-    live: 'https://lokawani.vercel.app',
-    github: 'https://github.com/ajayjawade06',
-  },
-  {
-    title: 'News Portal',
+    title: 'News Portal (Lokawani)',
     tag: 'Full Stack',
     tagClass: 'fullstack',
     description:
-      'Full-stack MERN news portal with admin panel for publishing and managing articles, category-based filtering, Cloudinary image storage, and a responsive reader-facing interface.',
-    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Cloudinary', 'REST API'],
+      'Full-stack MERN news portal connecting citizens with local governance. Features admin panel for publishing articles, category-based filtering, Cloudinary image storage, and a responsive interface.',
+    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Cloudinary', 'Vercel'],
+    live: 'https://lokawani.vercel.app',
     github: 'https://github.com/ajayjawade06/News-Portal',
   },
   {

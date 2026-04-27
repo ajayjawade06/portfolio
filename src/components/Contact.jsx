@@ -33,16 +33,29 @@ const Contact = () => {
     e.preventDefault();
     setSending(true);
 
-    // EmailJS integration — replace IDs with your own
-    // import emailjs from '@emailjs/browser';
-    // await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form, 'YOUR_PUBLIC_KEY');
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      });
 
-    // Simulate send for now
-    await new Promise((r) => setTimeout(r, 1500));
-    setSending(false);
-    setSent(true);
-    setForm({ name: '', email: '', message: '' });
-    setTimeout(() => setSent(false), 4000);
+      if (response.ok) {
+        setSent(true);
+        setForm({ name: '', email: '', message: '' });
+      } else {
+        console.error('Failed to send message');
+        alert('Failed to send message. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      alert('An error occurred. Please try again later.');
+    } finally {
+      setSending(false);
+      setTimeout(() => setSent(false), 4000);
+    }
   };
 
   return (
