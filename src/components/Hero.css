@@ -6,6 +6,7 @@
   justify-content: center;
   overflow: hidden;
   background: radial-gradient(ellipse at 50% 50%, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
+  padding-top: 70px;
 }
 
 /* Particles */
@@ -87,7 +88,6 @@
   text-align: center;
   padding: 0 2rem;
   max-width: 800px;
-  margin-bottom: 3rem;
 }
 
 .hero-greeting {
@@ -202,4 +202,8 @@
   .floating-icons { display: none; }
   .scroll-indicator { display: none; }
   .hero { min-height: 100svh; }
+}
+
+@media (max-height: 700px) {
+  .scroll-indicator { display: none; }
 }
