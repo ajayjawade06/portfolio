@@ -108,7 +108,7 @@ const Hero = () => {
   const roles = [
     'MERN Stack Developer',
     'Full Stack Engineer',
-    'Freelance Web Developer',
+    'Software Engineer',
     'React + Node.js Expert',
   ];
   const typed = useTypewriter(roles);
@@ -159,14 +159,14 @@ const Hero = () => {
             View My Work
           </a>
           <a href="#contact" className="btn btn-secondary">
-            Hire Me
+            Contact Me
           </a>
         </div>
 
         <div className="hero-availability">
           <div className="availability-badge">
             <span className="blink-dot" />
-            Available for freelance
+            Open to full-time roles
           </div>
         </div>
       </motion.div>

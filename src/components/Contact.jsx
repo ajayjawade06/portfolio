@@ -20,7 +20,7 @@ const contactInfo = [
 const Contact = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
   const [form, setForm] = useState({
-    name: '', email: '', projectType: '', budget: '', message: '',
+    name: '', email: '', message: '',
   });
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
@@ -41,7 +41,7 @@ const Contact = () => {
     await new Promise((r) => setTimeout(r, 1500));
     setSending(false);
     setSent(true);
-    setForm({ name: '', email: '', projectType: '', budget: '', message: '' });
+    setForm({ name: '', email: '', message: '' });
     setTimeout(() => setSent(false), 4000);
   };
 
@@ -77,7 +77,7 @@ const Contact = () => {
 
             <div className="availability-badge" style={{ marginTop: '2rem' }}>
               <span className="blink-dot" />
-              Available for freelance
+              Open to full-time roles
             </div>
           </div>
 
@@ -95,29 +95,9 @@ const Contact = () => {
                 value={form.email} onChange={handleChange} required
               />
             </div>
-            <div className="form-row">
-              <div className="form-group">
-                <select name="projectType" value={form.projectType} onChange={handleChange} required>
-                  <option value="" disabled>Project Type</option>
-                  <option value="Web App">Web App</option>
-                  <option value="E-Commerce">E-Commerce</option>
-                  <option value="Business Website">Business Website</option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
-              <div className="form-group">
-                <select name="budget" value={form.budget} onChange={handleChange} required>
-                  <option value="" disabled>Budget Range</option>
-                  <option value="Under ₹10k">Under ₹10k</option>
-                  <option value="₹10k–25k">₹10k–25k</option>
-                  <option value="₹25k–50k">₹25k–50k</option>
-                  <option value="₹50k+">₹50k+</option>
-                </select>
-              </div>
-            </div>
             <div className="form-group">
               <textarea
-                name="message" placeholder="Tell me about your project..."
+                name="message" placeholder="Write your message here..."
                 rows="5" value={form.message} onChange={handleChange} required
               />
             </div>

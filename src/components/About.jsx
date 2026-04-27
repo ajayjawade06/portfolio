@@ -128,7 +128,7 @@ const About = () => {
             <p>
               I've built and deployed live production apps including an e-commerce
               platform, a civic portal, and a news portal. I'm currently learning
-              DevOps practices and actively available for freelance projects.
+              DevOps practices and actively looking for full-time software engineering roles.
             </p>
           </div>
         </div>

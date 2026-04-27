@@ -26,7 +26,7 @@ const Footer = () => (
 
       <div className="availability-badge">
         <span className="blink-dot" />
-        Open to freelance opportunities
+        Open to full-time opportunities
       </div>
     </div>
   </footer>
