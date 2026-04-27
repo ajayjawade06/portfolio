@@ -4,6 +4,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import profilePic from '../assets/profile.jpg';
 import './About.css';
 
 const skills = [
@@ -107,7 +108,9 @@ const About = () => {
               <div className="orb-ring ring-1" />
               <div className="orb-ring ring-2" />
               <div className="orb-ring ring-3" />
-              <div className="orb-core" />
+              <div className="orb-core">
+                <img src={profilePic} alt="Ajay Jawade" className="profile-img" />
+              </div>
             </div>
           </div>
 
