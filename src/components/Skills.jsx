@@ -8,7 +8,7 @@ import {
   FaDocker, FaGitAlt, FaLinux, FaAws, FaDatabase,
 } from 'react-icons/fa';
 import {
-  SiJavascript, SiExpress, SiMongodb, SiMysql, SiGithubactions,
+  SiJavascript, SiExpress, SiMongodb, SiMysql, SiGithubactions, SiPhp,
 } from 'react-icons/si';
 import './Skills.css';
 
@@ -17,6 +17,7 @@ const row1 = [
   { name: 'React.js', icon: <FaReact />, color: '#61dafb' },
   { name: 'HTML5', icon: <FaHtml5 />, color: '#e34f26' },
   { name: 'CSS3', icon: <FaCss3Alt />, color: '#1572b6' },
+  { name: 'PHP', icon: <SiPhp />, color: '#777bb4' },
   { name: 'Java', icon: <FaJava />, color: '#ed8b00' },
   { name: 'Python', icon: <FaPython />, color: '#3776ab' },
 ];

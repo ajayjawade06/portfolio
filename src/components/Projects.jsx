@@ -29,22 +29,22 @@ const projects = [
     github: 'https://github.com/ajayjawade06',
   },
   {
-    title: 'Habit Tracker App',
+    title: 'News Portal',
     tag: 'Full Stack',
     tagClass: 'fullstack',
     description:
-      'Full-stack habit tracking app with secure JWT authentication, progress analytics dashboard, and RESTful API backend.',
-    tech: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'JWT Auth'],
-    github: 'https://github.com/ajayjawade06',
+      'Full-stack MERN news portal with admin panel for publishing and managing articles, category-based filtering, Cloudinary image storage, and a responsive reader-facing interface.',
+    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Cloudinary', 'REST API'],
+    github: 'https://github.com/ajayjawade06/News-Portal',
   },
   {
-    title: 'CI/CD Deployment Project',
-    tag: 'DevOps',
-    tagClass: 'devops',
+    title: 'Notes Sharing Platform',
+    tag: 'Full Stack',
+    tagClass: 'fullstack',
     description:
-      'Containerized a Node.js app using Docker, built a GitHub Actions CI/CD pipeline, and deployed to AWS EC2 with basic logging and monitoring.',
-    tech: ['Docker', 'GitHub Actions', 'AWS EC2', 'Node.js', 'Linux'],
-    github: 'https://github.com/ajayjawade06',
+      'A PHP-based notes sharing platform where students can upload, browse, and download academic notes. Features user authentication and organized subject-wise categorization.',
+    tech: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    github: 'https://github.com/ajayjawade06/Notes-Sharing-PHP-Project',
   },
 ];
 

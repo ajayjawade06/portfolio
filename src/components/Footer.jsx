@@ -2,7 +2,7 @@
    Footer — Social links and copyright
    ============================================================ */
 import React from 'react';
-import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi';
 import './Footer.css';
 
 const Footer = () => (
@@ -14,11 +14,11 @@ const Footer = () => (
         <a href="https://github.com/ajayjawade06" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <FiGithub />
         </a>
-        <a href="https://linkedin.com/in/ajujawade" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/ajayjawade06" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <FiLinkedin />
         </a>
-        <a href="https://x.com/ajujawade" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
-          <FiTwitter />
+        <a href="https://www.instagram.com/ajujawade" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <FiInstagram />
         </a>
       </div>
 

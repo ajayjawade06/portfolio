@@ -4,7 +4,7 @@
 import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import {
-  FiMail, FiPhone, FiMapPin, FiLinkedin, FiGithub, FiSend,
+  FiMail, FiPhone, FiMapPin, FiLinkedin, FiGithub, FiSend, FiInstagram,
 } from 'react-icons/fi';
 import './Contact.css';
 
@@ -12,8 +12,9 @@ const contactInfo = [
   { icon: <FiMail />, label: 'Email', value: 'ajayjawade06@gmail.com', href: 'mailto:ajayjawade06@gmail.com' },
   { icon: <FiPhone />, label: 'Phone', value: '8625923389', href: 'tel:+918625923389' },
   { icon: <FiMapPin />, label: 'Location', value: 'Pune, Maharashtra', href: null },
-  { icon: <FiLinkedin />, label: 'LinkedIn', value: 'linkedin.com/in/ajujawade', href: 'https://linkedin.com/in/ajujawade' },
+  { icon: <FiLinkedin />, label: 'LinkedIn', value: 'linkedin.com/in/ajayjawade06', href: 'https://www.linkedin.com/in/ajayjawade06' },
   { icon: <FiGithub />, label: 'GitHub', value: 'github.com/ajayjawade06', href: 'https://github.com/ajayjawade06' },
+  { icon: <FiInstagram />, label: 'Instagram', value: 'instagram.com/ajujawade', href: 'https://www.instagram.com/ajujawade' },
 ];
 
 const Contact = () => {

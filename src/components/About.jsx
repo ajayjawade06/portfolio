@@ -14,8 +14,8 @@ const skills = [
   { name: 'JavaScript', level: 82 },
   { name: 'REST APIs', level: 80 },
   { name: 'Git & GitHub', level: 85 },
-  { name: 'Docker (basics)', level: 45 },
-  { name: 'AWS (basics)', level: 40 },
+  { name: 'Docker (learning)', level: 45 },
+  { name: 'AWS (learning)', level: 40 },
   { name: 'Linux', level: 60 },
 ];
 
@@ -124,7 +124,8 @@ const About = () => {
             </p>
             <p>
               I've built and deployed live production apps including an e-commerce
-              platform and a civic portal. I'm actively available for freelance projects.
+              platform, a civic portal, and a news portal. I'm currently learning
+              DevOps practices and actively available for freelance projects.
             </p>
           </div>
         </div>
