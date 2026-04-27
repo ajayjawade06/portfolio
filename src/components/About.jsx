@@ -4,7 +4,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import profilePic from '../assets/profile.jpg';
+import profilePic from '../assets/profile.JPG';
 import './About.css';
 
 const skills = [
@@ -17,7 +17,7 @@ const skills = [
   { name: 'Git & GitHub', level: 85 },
   { name: 'Docker (learning)', level: 45 },
   { name: 'AWS (learning)', level: 40 },
-  { name: 'Linux', level: 60 },
+  { name: 'Linux', level: 40 },
 ];
 
 const stats = [
