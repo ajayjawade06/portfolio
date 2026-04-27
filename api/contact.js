@@ -55,11 +55,14 @@ export default async function handler(req, res) {
       return res.status(200).json({ success: true, message: 'Email sent successfully' });
     } else {
       const errorData = await response.json();
-      console.error('Brevo Error:', errorData);
-      return res.status(500).json({ success: false, message: 'Failed to send email' });
+      return res.status(400).json({ 
+        success: false, 
+        message: 'Brevo API rejected the request', 
+        details: errorData,
+        hint: !brevoApiKey ? 'API Key is missing' : 'Check if sender email is verified in Brevo'
+      });
     }
   } catch (error) {
-    console.error('Fetch Error:', error);
-    return res.status(500).json({ success: false, message: 'Internal Server Error' });
+    return res.status(500).json({ success: false, message: 'Internal Server Error', error: error.message });
   }
 }

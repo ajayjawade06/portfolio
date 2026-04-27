@@ -46,12 +46,13 @@ const Contact = () => {
         setSent(true);
         setForm({ name: '', email: '', message: '' });
       } else {
-        console.error('Failed to send message');
-        alert('Failed to send message. Please try again later.');
+        const errData = await response.json();
+        console.error('API Error:', errData);
+        alert(`Failed: ${errData.message || 'Unknown error'}\n${errData.hint || ''}`);
       }
     } catch (error) {
       console.error('Error sending message:', error);
-      alert('An error occurred. Please try again later.');
+      alert('An error occurred while connecting to the server. Please try again later.');
     } finally {
       setSending(false);
       setTimeout(() => setSent(false), 4000);
