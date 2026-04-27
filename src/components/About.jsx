@@ -118,7 +118,7 @@ const About = () => {
           <div className="about-text">
             <p>
               I'm an MCA student at PES Modern Institute of Business Studies, Pune,
-              currently working as an Analyst Trainee at Cognizant Technology Solutions.
+              currently working as an Analyst at Cognizant Technology Solutions.
             </p>
             <p>
               I specialize in building full-stack web applications using the MERN stack

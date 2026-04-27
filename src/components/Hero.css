@@ -87,6 +87,7 @@
   text-align: center;
   padding: 0 2rem;
   max-width: 800px;
+  margin-bottom: 3rem;
 }
 
 .hero-greeting {
@@ -151,7 +152,7 @@
 /* Scroll indicator */
 .scroll-indicator {
   position: absolute;
-  bottom: 2rem;
+  bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
