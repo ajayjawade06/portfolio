@@ -1,0 +1,81 @@
+.education {
+  background: var(--bg-primary);
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.education-card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.education-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+}
+
+.edu-indigo::before {
+  background: linear-gradient(90deg, var(--accent-indigo), var(--accent-indigo-light));
+}
+
+.edu-teal::before {
+  background: linear-gradient(90deg, var(--accent-teal), var(--accent-teal-light));
+}
+
+.edu-indigo:hover {
+  box-shadow: 0 0 30px var(--accent-indigo-glow);
+}
+
+.edu-teal:hover {
+  box-shadow: 0 0 30px var(--accent-teal-glow);
+  border-color: rgba(20, 184, 166, 0.3);
+}
+
+.edu-icon {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+  color: var(--accent-indigo-light);
+}
+
+.edu-teal .edu-icon {
+  color: var(--accent-teal-light);
+}
+
+.edu-institution {
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.edu-degree {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.edu-period {
+  font-size: 0.82rem;
+  color: var(--accent-indigo-light);
+  font-weight: 600;
+}
+
+.edu-teal .edu-period {
+  color: var(--accent-teal-light);
+}
+
+@media (max-width: 768px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+}

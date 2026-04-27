@@ -1,0 +1,81 @@
+.skills {
+  background: var(--bg-secondary);
+}
+
+.skills-row-label {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.25rem;
+  margin-top: 2rem;
+}
+
+.skills-row-label:first-of-type {
+  margin-top: 0;
+}
+
+.skills-icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.skill-icon-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  perspective: 600px;
+}
+
+.skill-icon-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-icon-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.5rem 1.75rem;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
+  border-radius: 16px;
+  transition: all 0.4s ease;
+  min-width: 100px;
+}
+
+.skill-icon-inner:hover {
+  transform: rotateY(10deg) rotateX(-5deg) scale(1.08);
+  border-color: var(--skill-color, var(--accent-indigo));
+  box-shadow: 0 0 25px color-mix(in srgb, var(--skill-color, var(--accent-indigo)) 30%, transparent);
+}
+
+.skill-icon {
+  font-size: 2.2rem;
+  color: var(--skill-color, var(--accent-indigo));
+  transition: transform 0.3s ease;
+}
+
+.skill-icon-inner:hover .skill-icon {
+  transform: scale(1.15);
+}
+
+.skill-icon-name {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .skill-icon-inner {
+    padding: 1rem 1.25rem;
+    min-width: 80px;
+  }
+  .skill-icon { font-size: 1.8rem; }
+}

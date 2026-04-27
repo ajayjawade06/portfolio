@@ -1,0 +1,98 @@
+.services {
+  background: var(--bg-primary);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service-flip-card {
+  perspective: 1000px;
+  height: 320px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.service-flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+  gap: 1.25rem;
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: var(--accent-indigo);
+  margin-bottom: 1.25rem;
+}
+
+.service-title {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+}
+
+.flip-hint {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
+
+.service-desc {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  padding: 0 0.5rem;
+}
+
+.service-price-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-price-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.service-price {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent-indigo), var(--accent-teal));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .service-flip-card {
+    height: 300px;
+  }
+}
